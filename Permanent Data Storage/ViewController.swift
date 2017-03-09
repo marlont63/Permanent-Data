@@ -12,8 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Guardamos el nombre "Marlon con la key "name"
         UserDefaults.standard.set("Marlon", forKey:"name")
         
+        // Obtenemos el dato almacenado de esta forma 
         let nameObject = UserDefaults.standard.object(forKey: "name")
         
         if let name = nameObject as? String
